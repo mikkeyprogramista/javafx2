@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.adz1q.javafx2.Controller">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: wheat;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adz1q.javafx2.Controller">
+   <children>
+      <Button fx:id="btnClick" layoutX="241.0" layoutY="77.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" text="Kliknij" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblInfo" layoutX="241.0" layoutY="60.0" text="To jest druga apka z fx" textAlignment="CENTER" />
+      <Hyperlink fx:id="link" text="Klinij by zobaczyc zdjecia wojtka nowocienia" />
+   </children>
+</Pane>
